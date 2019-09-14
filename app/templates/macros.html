@@ -22,11 +22,11 @@
 
 {% for source_row  in source_list |batch(4)%}
 
-        <div class="row" style="margin-left: 10%" >
+        <div class="row" style="margin-left: 8%" >
         	
 	        	
             {% for sources in source_row %}
-	            <div class="col-md-2">
+	            <div class="col-md-3">
 		           
 		            <div class="panel panel-default" style="background-color: transparent">
 						<!-- <div class="panel-heading"> -->
@@ -39,7 +39,7 @@
 								{{ sources.description |truncate(100)}}
 
 							</p>
-							<a href="/sources/{{sources.id}}" class="btn btn-success btn-sm">Visit {{sources.name}}</a>
+							<button class="btn btn-primary "></button>  <a href="/sources/{{sources.id}}"style="color: white">Visit {{sources.name}}</a></button>
 						<!-- </div> -->
 						
 		
