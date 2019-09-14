@@ -1,57 +1,27 @@
-<!-- {%macro displaySourceList(source_list) %}
-    {% for source_row  in source_list | batch(4) %}
-        <div class="row" style="background-color: transparent">
-            {% for sources in sources_row %}
-            <div class="col-md-3">
-                <div class=" panel panel-default" style="background-color: transparent">
-                    <div class="panel-heading">
-                        <a href="/sources/{{sources.id}}">{{sources.name}}</a>
-                    </div>
-                    <div class="panel-body">
-                        <p>{{sources.description | truncate(100)}}</p>
-                        <a href="/sources/{{sources.id}}" class="btn btn-success btn-sm">visit {{sources.name}}</a>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-    {% endfor %}
-{% endmacro %}-->
-
 {% macro displaySourceList(source_list) %}
 
-{% for source_row  in source_list |batch(4)%}
+{% for source_row in source_list |batch(4) %}
 
-        <div class="row" style="margin-left: 0%" >
-        	
-	        	
-            {% for sources in source_row %}
-	            <div class="col-md-3">
-		           
-		            <div class="panel panel-default" style="background-color: transparent">
-						<!-- <div class="panel-heading"> -->
-							<a href="/sources/{{sources.id}}">
-							    {{ sources.name}}
-					        </a>
-						<!-- </div> -->
-						<!-- <div class="panel-body"> -->
-							<p  style="color:white">
-								{{ sources.description |truncate(100)}}
-
-							</p>
-							<button class="btn btn-primary "></button>  <a href="/sources/{{sources.id}}"style="color: white">Visit {{sources.name}}</a></button>
-						<!-- </div> -->
-						
-		
-					</div>
-		        </div>
-            {% endfor %}
-	        	
-        </div>
+<div class="row ">
+    {% for sources in source_row %}
+    <div class="col-md-3">
+        <div class="" style="background-color: transparent">
+            <a href="/sources/{{sources.id}}">{{sources.name}}</a>
+            <p style="color: white"> {{sources.description |truncate(100)}}</p>
+            <button class="btn btn-primary"> <a href="/sources/{{sources.id}}" style="color: white">{{sources.name}}</a></button>
+            </div>
+            <hr>
+    </div>
     {% endfor %}
-
+</div>
+{% endfor %}
 {% endmacro %}
 
+        	
+	        	
+
+						
+		
 
 
 
