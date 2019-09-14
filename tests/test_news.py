@@ -1,6 +1,6 @@
 import unittest
 from app.models import Sources, Articles
-c
+
 
 class NewTest(unittest.TestCase):
     '''
@@ -34,7 +34,7 @@ class ArticlesTest(unittest.TestCase):
         '''
         method that will run before our test
         '''
-        self.new_article=Articles(("CNN","Peter Polle", "The tech scene in Africa is it the next big thing","A look at various tech hubs in Africa ","techi.com","techinie.com/7643t94.jpg","2018-04-11T07:57:16Z")
+        self.new_article=Articles("CNN","Peter Polle", "The tech scene in Africa is it the next big thing","A look at various tech hubs in Africa ","techi.com","techinie.com/7643t94.jpg","2018-04-11T07:57:16Z")
     
     def tests_instance(self):
         self.assertTrue(isinstance(self.new_article,Articles))
