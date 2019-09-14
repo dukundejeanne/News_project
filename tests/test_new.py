@@ -20,7 +20,7 @@ class NewTest(unittest.TestCase):
         self.assertEquals(self.new_source.id,'CNN')
         self.assertEquals(self.new_source.name,'CNN News')
         self.assertEquals(self.new_source.description,'Cable News Networks that is a leader in providings news worlwide')
-        self.assertEquals(self.new_source.url,'cnn.com)
+        self.assertEquals(self.new_source.url,'cnn.com')
         self.assertEquals(self.new_source.category,'general')
         self.assertEquals(self.new_source.country,'USA')
         self.assertEquals(self.new_source.language,'en')
@@ -35,7 +35,6 @@ class ArticlesTest(unittest.TestCase):
         set up method that will run before 
         '''
         self.new_article=Articles(("CNN","Peter Polle", "The tech scene in Africa is it the next big thing","A look at various tech hubs in Africa ","techi.com","techinie.com/7643t94.jpg","2018-04-11T07:57:16Z")
-    
     
     def test_instance(self):
         self.assertTrue(isinstance(self.new_article,Articles))
