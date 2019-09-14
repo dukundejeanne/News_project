@@ -70,10 +70,13 @@ def process_articles(articles_list):
     for articles_item in articles_list:
 
         id=articles_item.get('id')
+        
         author=articles_item.get('author ')
         title= articles_item.get('title')
+
         description = articles_item.get('description ')
         url=articles_item.get('url')
+
         image=articles_item.get('urlToImage')
         date=articles_item.get('publishedAt')
 
