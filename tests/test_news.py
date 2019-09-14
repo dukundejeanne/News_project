@@ -32,11 +32,11 @@ class ArticlesTest(unittest.TestCase):
     '''
     def setUp(self):
         '''
-        set up method that will run before 
+        method that will run before our test
         '''
         self.new_article=Articles(("CNN","Peter Polle", "The tech scene in Africa is it the next big thing","A look at various tech hubs in Africa ","techi.com","techinie.com/7643t94.jpg","2018-04-11T07:57:16Z")
     
-    def test_instance(self):
+    def tests_instance(self):
         self.assertTrue(isinstance(self.new_article,Articles))
     
     def test_to_check_instance_variables(self):
