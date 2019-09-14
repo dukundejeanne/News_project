@@ -2,21 +2,21 @@
 {% import 'macros.html' as macro %}
 
 {% block content%}
-<div class="container"  style="color:white; width:70%;background-image: url('https://res.cloudinary.com/drrezzrvd/image/upload/v1568464281/images_1_hg7jgo.jpg'); background-repeat: no-repeat; background-size: cover">
+<div class="container" style="color: white; background-image: url('https://res.cloudinary.com/drrezzrvd/image/upload/v1568464281/images_1_hg7jgo.jpg'); background-repeat: no-repeat; background-size: cover; width: 80%">
 
-    <h3> Top Technology News Sources</h3>
+    <h2 style="text-align: center"> Top Technology News Sources</h2>
     <hr>
     {{macro.displaySourceList(technology_sources)}}
 
-    <h3>Top Business New Sources</h3>
+    <h2 style="text-align: center">Top Business New Sources</h2>
     <hr>
     {{ macro.displaySourceList(sources)}}
 
-    <h3>Top Entertainment News</h3>
+    <h2 style="text-align: center" >Top Entertainment News</h2>
     <hr>
     {{ macro.displaySourceList(entertainment_sources)}}
 
-    <h3>Top Sport News Sources</h3>
+    <h2 style="text-align: center">Top Sport News Sources</h2>
     <hr>
     {{ macro.displaySourceList(sports_sources)}}
 
