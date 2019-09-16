@@ -16,7 +16,7 @@ use code . for visual code
 * terminal 
 * ubuntu windows
 ## Run
-Use Terminal to run this application
+Use Terminal to open the server and the brouser to run this application
 
 ### Behavior Driven Development (BDD)
 * Create methode and function  etc..
